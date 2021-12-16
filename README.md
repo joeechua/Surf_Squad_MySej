@@ -1,7 +1,7 @@
 # Monash Hackathon 2021
 Submission for Surf Squad (Yishen Wong, Lee Jing Qian, Chua Jo Ee)
 
-## Main Video
+## Pitching Video from Round 2
 By clicking [here](https://youtu.be/JDLlmJJHlj4) or the image, you will be brought to a video of the presentation for our team's soultion
 <br>
 [![Main Video](http://img.youtube.com/vi/JDLlmJJHlj4/0.jpg)](http://www.youtube.com/watch?v=JDLlmJJHlj4 "Monash Hackathon 2021 Surf Squad (Round 2)")
@@ -40,6 +40,6 @@ Files in this repository is the codebase for the prototype of the app. It can be
 - Confirm button in check-out reminder timer setting
 
 ### Pages
-![Homepgae Image](https://github.com/joeechua/SurfSquad/blob/main/homepage.png)
-![Settings Image](https://github.com/joeechua/SurfSquad/blob/main/settingspage.png)
-![Timer Image](https://github.com/joeechua/SurfSquad/blob/main/timer.png)
+![Homepage Image](https://github.com/joeechua/SurfSquad/blob/main/homepage.PNG)
+![Settings Image](https://github.com/joeechua/SurfSquad/blob/main/settingspage.PNG)
+![Timer Image](https://github.com/joeechua/SurfSquad/blob/main/timer.PNG)
