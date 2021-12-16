@@ -19,6 +19,7 @@ import androidx.cardview.widget.CardView;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
+import android.util.Log;
 import android.view.View;
 
 import android.view.Menu;
@@ -65,12 +66,39 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        closeButton = (Button) findViewById(R.id.button4);
+        builder = new AlertDialog.Builder(this);
         CardView cv3 = findViewById(R.id.cardView3);
         cv3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your third action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                //Uncomment the below code to Set the message and title from the strings.xml file
+                builder.setMessage(R.string.dialog_message) .setTitle(R.string.dialog_title);
+
+                //Setting message manually and performing action on button click
+                builder.setMessage("Are you still in Restaurant OKOK?")
+                        .setCancelable(false)
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                dialog.cancel();
+                                Toast.makeText(getApplicationContext(),"Next reminder will be in 1 minute(s)",
+                                        Toast.LENGTH_LONG).show();
+                            }
+                        })
+                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                //  Action for 'NO' Button
+                                dialog.cancel();
+                                closeButton.setText("checked-out");
+                                Toast.makeText(getApplicationContext(),"You have been checked out of Restaurant OKOK",
+                                        Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                //Creating dialog box
+                AlertDialog alert = builder.create();
+                //Setting the title manually
+                alert.setTitle("Check-out Reminder");
+                alert.show();
             }
         });
 
