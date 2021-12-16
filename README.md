@@ -43,3 +43,4 @@ Files in this repository is the codebase for the prototype of the app. It can be
 ![Homepage Image](https://github.com/joeechua/SurfSquad/blob/main/homepage.PNG)
 ![Settings Image](https://github.com/joeechua/SurfSquad/blob/main/settingspage.PNG)
 ![Timer Image](https://github.com/joeechua/SurfSquad/blob/main/timer.PNG)
+![Profile Image](https://github.com/joeechua/SurfSquad/blob/main/profile.PNG)
