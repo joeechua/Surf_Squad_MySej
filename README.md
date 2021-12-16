@@ -38,3 +38,8 @@ Files in this repository is the codebase for the prototype of the app. It can be
 - Show QR button on main page
 - Notifications tab in settings page
 - Confirm button in check-out reminder timer setting
+
+### Pages
+![Homepgae Image](https://github.com/joeechua/SurfSquad/blob/main/homepage.png)
+![Settings Image](https://github.com/joeechua/SurfSquad/blob/main/settingspage.png)
+![Timer Image](https://github.com/joeechua/SurfSquad/blob/main/timer.png)
