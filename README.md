@@ -31,7 +31,7 @@ Click [here](https://www.figma.com/proto/bht1k4qDlPCflAFc8Zw097/Surf-Squad?node-
 Files in this repository is the codebase for the prototype of the app. It can be run on Android Emulator.
 
 ### Features added were:
-- - Show QR button on main page to allow users to easily access their QR code
+- Show QR button on main page to allow users to easily access their QR code
 - A checkout reminder system to ensure users check out as soon as possible
 
 ### Interactive Elements in the Application:
