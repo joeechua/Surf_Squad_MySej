@@ -23,8 +23,17 @@ import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.content.DialogInterface;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.app.AlertDialog;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    Button closeButton;
+    AlertDialog.Builder builder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,25 +75,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-    }
-
-    public static void notify(Context context, int id, PendingIntent intent) {
-        NotificationManager notificationManager =
-                (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-        String title = "Surf Gang MySej";
-        String text = "Do you want to check out from Restaurant OKOK";
-
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(context)
-                .setSmallIcon(R.drawable.qrcode)
-                .setContentTitle(title)
-                .setContentText(text)
-                .setDefaults(Notification.DEFAULT_ALL)
-                .setPriority(NotificationCompat.PRIORITY_HIGH)
-                .setAutoCancel(true)
-                .setWhen(System.currentTimeMillis())
-                .setTicker(title)
-                .setContentIntent(intent);
-        notificationManager.notify(id, builder.build());
     }
 
 
